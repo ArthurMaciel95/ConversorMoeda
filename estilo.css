@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 300px;
+  height: auto;
+  margin: 60px auto;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 1px 2px 3px #ccc;
+}
+
+#dolar {
+  margin-top: 20px;
+  padding: 10px;
+  height: 20px;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#btn {
+  width: 80px;
+  height: 30px;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #082;
+  color: #fff;
+}
+
+#real {
+  margin-top: 20px;
+}
+
+h4::before {
+  content: 'R$ ';
+
+}
