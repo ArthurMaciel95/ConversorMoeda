@@ -4,16 +4,25 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  width: 300px;
-  height: auto;
-  margin: 60px auto;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 1px 2px 3px #ccc;
+.main {
+  width: 768px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
-#dolar {
+.container {
+  width: 300px;
+  padding: 10px;
+  margin-top: 20px;
+  height: auto;
+  text-align: center;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0,.5);
+  border-radius: 5px;
+}
+
+.style-input {
   margin-top: 20px;
   padding: 10px;
   height: 20px;
@@ -22,21 +31,44 @@
   border-radius: 5px;
 }
 
-#btn {
+.btn {
   width: 80px;
   height: 30px;
   border: none;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #082;
+  background-color: #9b59b6;
   color: #fff;
 }
 
-#real {
+.valorReal {
   margin-top: 20px;
+}
+
+h3 {
+  color: #9b59b6;
+}
+
+h4 {
+  color: #333;
 }
 
 h4::before {
   content: 'R$ ';
 
+}
+
+#moedaDolar::before {
+  content: 'U$D ';
+
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    flex-direction: column;
+  }
+  .container {
+    margin: 20px auto;
+  }
 }
