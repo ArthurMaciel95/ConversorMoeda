@@ -23,6 +23,9 @@ urlDolar.then((r) => {
     real.innerText = (valor * dolar.value).toFixed(2).replace(".", ",")
   }
 })
+.catch((erro) => {
+
+})
 
 /*Convertendo o real para o dólar*/
 const urlReal = fetch('http://economia.awesomeapi.com.br/json/all/USD-BRL')
