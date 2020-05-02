@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilo.css">
-  <title>Conversor de Moeda</title>
+  <title>Conversor de Moedas</title>
 </head>
+
 <body>
+  <h1>Conversor de Moedas</h1>
+  <p>Conversão das moedas Dólar, Euro e Bitcoin para o Real. Compare! </p>
   <section class="main">
     <!-- Converte do dólar para o real -->
-    <div class="container">
-      <h3>U$D / BRL</h3>
-      <input type="number" id="dolar" placeholder="USD" class="style-input">
-      <input type="button" id="btn" value="Converter" class="btn">
+    <div class="container border1">
+      <div class="content-container">
+        <h3><span>U$D </span>/ BRL</h3>
+        <input type="number" class="moedaA" autofocus>
+        <input type="button" value="Converter" class="btn btn1">
 
-      <h4 id="real" class="valorReal">0</h4>
+        <h3 class="moedaB">0</h3>
+      </div>
     </div>
 
-    <!-- Converte do real para o dólar -->
-    <div class="container">
-      <h3>BRL / U$D</h3>
-      <input type="number" id="moedaReal" placeholder="BRL" class="style-input">
-      <input type="button" id="btnReal" value="Converter" class="btn">
-
-      <h4 id="moedaDolar" class="valorReal">0</h4>
-    </div>
-  </section>
-
-  <section class="main">
     <!-- Converte do euro para o real -->
-    <div class="container">
-      <h3>EUR / BRL</h3>
-      <input type="number" id="euro" placeholder="EUR" class="style-input">
-      <input type="button" id="btnEuro" value="Converter" class="btn">
+    <div class="container border2">
+      <div class="content-container">
+        <h3><span>EUR</span> / BRL</h3>
+        <input type="number" class="moedaA">
+        <input type="button" value="Converter" class="btn btn2">
 
-      <h4 id="moedaEuro" class="valorReal">0</h4>
+        <h3 class="moedaB">0</h3>
+      </div>
     </div>
-    
-    <!-- Conver do bitcoin para o real -->
-    <div class="container">
-      <h3>BTC / BRL</h3>
-      <input type="number" id="bitcoin" placeholder="BTC" class="style-input">
-      <input type="button" id="btnBit" value="Converter" class="btn">
 
-      <h4 id="moedaBitcoin" class="valorReal">0</h4>
+    <!-- Conver do bitcoin para o real -->
+    <div class="container border3">
+      <div class="content-container">
+        <h3><span>BTC</span> / BRL</h3>
+        <input type="number" class="moedaA">
+        <input type="button" value="Converter" class="btn btn3">
+
+        <h3 class="moedaB">0</h3>
+      </div>
     </div>
   </section>
   <script src="script.js"></script>
 </body>
+
 </html>
