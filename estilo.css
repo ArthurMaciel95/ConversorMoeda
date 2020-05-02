@@ -94,6 +94,11 @@ p {
   background-color: #3498db;
 }
 
+.copy  a {
+  color: #000;
+  text-decoration: none;
+}
+
 /* Responsivo */
 @media (max-width: 960px) {
   .container {
