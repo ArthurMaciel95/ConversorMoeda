@@ -2,7 +2,7 @@
 	CONVERSOR DE MOEDAS EM TEMPO REAL
 */
 
-const url = fetch('http://economia.awesomeapi.com.br/json/all')
+const url = fetch('https://economia.awesomeapi.com.br/json/all')
 
 let moedaA = document.querySelectorAll('.moedaA')
 let moedaB = document.querySelectorAll('.moedaB')
